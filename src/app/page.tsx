@@ -5,13 +5,6 @@ import {QRCodeCanvas} from 'qrcode.react';
 export default function Home() {
   return (
     <main className="container">
-      <section className="title-container">
-        <img 
-        src="/Logo-UMJ 1.svg"
-        alt="detail"
-        className="Logo-detail"
-        />
-      </section>
       <section className="qr-code-container">
         <div className="qr-code">
             <div className="link-input">
@@ -49,8 +42,50 @@ export default function Home() {
             <button>
               Baixar QR Code
             </button>
+          </div>
+        <div className="buttons">
+          
+          <div className="container-logo">
+
+            <img 
+            src="/Logo-UMJ 1.svg"
+            alt="detail"
+            className="Logo-detail"
+            width={130}
+            />
+          </div>
+          <button className="home">
+            
+            <img src="home.svg" alt="detail"
+            height={50}
+            width={50}
+            />
+
+          </button>
+          <button className="whatsapp">
+
+            <img src="whatsapp.svg" alt="detail"
+            height={50}
+            />
+            
+          </button>
+          <button className="local">
+            
+            <img src="local.svg" alt="detail"
+            height={50}
+            />
+
+          </button>
+          <button className="qrcode">
+            
+            <img src="icon_qrcode.svg" alt="detail"
+            height={50}
+            />
+
+          </button>
         </div>
       </section>
+      
     </main>
   );
 }
